@@ -33,12 +33,12 @@ export class EslintPlugin extends GahPlugin {
         if (module.isHost) {
           continue;
         }
-        this.loggerService.log(`Linting ${module.moduleName}`);
+        this.loggerService.startLoadingAnimation(`Linting ${module.moduleName}`);
         const res = await this.executionService.execute('ng lint', false, undefined, module.basePath);
         if (res) {
-          this.loggerService.success(`Linting successfull for ${module.moduleName}`);
+          this.loggerService.stopLoadingAnimation(false, true, `Linting successfull for ${module.moduleName}`);
         } else {
-          this.loggerService.error(`Linting failed for ${module.moduleName}`);
+          this.loggerService.stopLoadingAnimation(false, false, `Linting failed for ${module.moduleName}`);
           this.loggerService.error(this.executionService.executionResult);
           result = false;
         }

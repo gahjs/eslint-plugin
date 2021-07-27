@@ -1,6 +1,6 @@
 {
   "name": "@gah/eslint-plugin",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "A plugin for linting all gah modules with eslint",
   "main": "./lib/index.js",
   "scripts": {
