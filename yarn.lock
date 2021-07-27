@@ -2,10 +2,20 @@
 # yarn lockfile v1
 
 
+"@awdware/eslint-config-base@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@awdware/eslint-config-base/-/eslint-config-base-1.0.0.tgz#7935fe5613266f2c41c4d13276404300ed44c3f8"
+  integrity sha512-PxzyJboFttYp/7dakC8++eQRjsC7t0tnnommXygGz29YMsTLv7T1KaU4LH/g6eWk8nA5lib8ld4TOpbJSnipCA==
+
 "@awdware/eslint-config-nodejs@^1.0.0":
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/@awdware/eslint-config-nodejs/-/eslint-config-nodejs-1.0.0.tgz#54a8651e4c571114248cb32255cfbaec37f7a023"
   integrity sha512-UZb2XAdWd5QU20Ae42BeAG+qlNUDaTGs8Fc1/Tm5YrqRyZd7rY0TUl/wA4pDJo1R26fea3yyuI2hp7vHR5lfPw==
+
+"@awdware/prettier-config@^0.0.2":
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/@awdware/prettier-config/-/prettier-config-0.0.2.tgz#8fd6d59a2b78006cd93a4ae435ca1338382735e6"
+  integrity sha512-VK6SiTmFgiN27sMCOQesu70LgjBCW79FnIQrDzOF+8iZ6p6E/cJs7RPicUpSw+YnzBeRQvHIeC4pBJ//iYKnlA==
 
 "@babel/code-frame@7.12.11":
   version "7.12.11"

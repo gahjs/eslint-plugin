@@ -1,6 +1,6 @@
 {
   "name": "@gah/eslint-plugin",
-  "version": "1.0.0",
+  "version": "1.2.0",
   "description": "A plugin for linting all gah modules with eslint",
   "main": "./lib/index.js",
   "scripts": {
@@ -12,11 +12,14 @@
   "author": "LoaderB0T",
   "license": "MIT",
   "private": false,
+  "prettier": "@awdware/prettier-config",
   "dependencies": {
     "@gah/shared": "^1.0.7"
   },
   "devDependencies": {
+    "@awdware/eslint-config-base": "^1.0.0",
     "@awdware/eslint-config-nodejs": "^1.0.0",
+    "@awdware/prettier-config": "^0.0.2",
     "@types/node": "^14.0.0",
     "@typescript-eslint/eslint-plugin": "^4.28.3",
     "@typescript-eslint/parser": "^4.28.3",

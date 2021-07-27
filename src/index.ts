@@ -1,3 +1,3 @@
-import { EslintPlugin } from "./eslint-plugin";
+import { EslintPlugin } from './eslint-plugin';
 
 export default EslintPlugin;

@@ -1,3 +1,3 @@
-import { GahPluginConfig } from "@gah/shared";
+import { GahPluginConfig } from '@gah/shared';
 
 export class EslintPluginConfig extends GahPluginConfig {}
