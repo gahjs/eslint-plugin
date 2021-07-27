@@ -1,3 +1,3 @@
-import { TemplatePlugin } from './template-plugin';
+import { EslintPlugin } from "./eslint-plugin";
 
-export default TemplatePlugin;
+export default EslintPlugin;
