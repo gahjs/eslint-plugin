@@ -74,10 +74,10 @@
     minimatch "^3.0.4"
     strip-json-comments "^3.1.1"
 
-"@gah/shared@^1.0.7":
-  version "1.0.7"
-  resolved "https://registry.yarnpkg.com/@gah/shared/-/shared-1.0.7.tgz#bc91cd7592173b52c2b8635cbb2c257128fddc70"
-  integrity sha512-iouSJQrIGpgg3QqI0M9JpZ4z3xf+WFL/d9tBCiHfkG/VS0LZtCQGBcwPc+ZICR5uarvypJHmqaymCWOO04GYFw==
+"@gah/shared@^1.0.8":
+  version "1.0.8"
+  resolved "https://registry.yarnpkg.com/@gah/shared/-/shared-1.0.8.tgz#5d6f38c7805148aea6ba2830e73b9b77e054c6e9"
+  integrity sha512-JbMXEH4JL468ebtmUwDQWKSF+SHuEZTcC1xf4QXlkxxK85ZUlCgWZ+RFzO5jvq9S16Bdy0OWA1N5OtLSLew3gA==
 
 "@humanwhocodes/config-array@^0.5.0":
   version "0.5.0"

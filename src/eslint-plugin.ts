@@ -17,8 +17,7 @@ export class EslintPlugin extends GahPlugin {
    */
   public async onInstall(): Promise<GahPluginConfig> {
     // Create a new instance of the plugin configuration
-    const newCfg = new EslintPluginConfig();
-
+    const newCfg = this.cfg ?? new EslintPluginConfig();
     return newCfg;
   }
 
@@ -29,6 +28,16 @@ export class EslintPlugin extends GahPlugin {
     this.registerCommandHandler('lint', async (args, gahFile) => {
       let result = true;
       const modulesWithUniquePaths = gahFile!.modules.filter((v, i, a) => a.findIndex(t => t.basePath === v.basePath) === i);
+
+      if (args.includes('ci')) {
+        const hostModule = gahFile!.modules.find(x => x.isHost)!;
+        const hostNodeModules = this.fileSystemService.join(hostModule.basePath, 'node_modules');
+        const rootDir = await this.gitService.getRootDir();
+        const rootNodeModules = this.fileSystemService.join(rootDir, 'node_modules');
+        await this.fileSystemService.deleteDirectoryRecursively(rootNodeModules);
+        await this.fileSystemService.createDirLink(rootNodeModules, hostNodeModules);
+      }
+
       for (const module of modulesWithUniquePaths) {
         if (module.isHost) {
           continue;
