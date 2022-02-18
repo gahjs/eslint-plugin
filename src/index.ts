@@ -1,3 +1,3 @@
-import { EslintPlugin } from './eslint-plugin';
+import { FormattingPlugin } from './formatting-plugin';
 
-export default EslintPlugin;
+export default FormattingPlugin;
