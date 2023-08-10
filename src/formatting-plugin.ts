@@ -75,7 +75,7 @@ export class FormattingPlugin extends GahPlugin {
       }
 
       this.loggerService.startLoadingAnimation('Installing prettier globally');
-      const prettierInstallRes = await this.executionService.execute('yarn global add prettier@^2.0.0', false);
+      const prettierInstallRes = await this.executionService.execute('yarn global add prettier@^2.8.8', false);
       this.loggerService.stopLoadingAnimation(
         false,
         prettierInstallRes,
